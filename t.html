@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .new-chat-window {
+            position: relative;
+            width: 200px;
+            display: block;
+            margin: 10px auto;
+            z-index: 2;
+        }
+
+        .new-chat-window .fa {
+            position: absolute;
+            top: 7px;
+            left: 10px;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        input:focus {
+            outline-color: blue;
+        }
+
+        .new-chat-window-input {
+            border: 1px solid #ccc;
+            line-height: 30px;
+            padding-left: 30px;
+            width: 100%;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="new-chat-window">
+        <img class="fa-fa-search" src="./asset/image/envelope.svg" alt="">
+        <input type="text" class="new-chat-window-input" id="new-chat-window-input" placeholder="Rechercher" />
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+table,
+th,
+td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  size: 100%;
+}
+
+th {
+  background-color: rgb(29, 108, 255);
+}
+
+td {
+  background-color: rgb(132, 212, 250);
+}

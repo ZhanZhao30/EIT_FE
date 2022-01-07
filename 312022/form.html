@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily UI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+        }
+
+        body {
+            background-image: url(../asset/image/paris-min.jpg);
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        html {
+            width: 100%;
+        }
+
+        .nav-item {
+            padding: 0.7rem 1rem;
+            margin: 0rem 2rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .nav-item:hover {
+            color: rgb(233, 48, 134);
+        }
+
+        .navbar-nav {
+            display: flex;
+            color: white;
+            list-style: none;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 1rem 3rem;
+            padding: 0.7rem;
+        }
+
+        .navbar>h2 {
+            color: rgb(255, 255, 255);
+            font-weight: normal;
+            font-size: 2rem;
+        }
+
+        h2>span {
+            font-weight: bold;
+        }
+
+        .container {
+            height: 65%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 8rem;
+            width: 100%;
+        }
+
+        form>div {
+            width: 30%;
+            border-bottom: 1px solid white;
+        }
+
+        .mail,
+        .password {
+            margin-bottom: 3rem;
+        }
+
+        #mail,
+        #password {
+            height: 1.5rem;
+            background: none;
+            border: none;
+        }
+
+        #mail,
+        #password:focus {
+            outline: none;
+            color: white;
+            font-size: large;
+        }
+
+        .mail>img,
+        .password>img {
+            margin-right: 1rem;
+        }
+
+        button {
+            padding: 0.7rem 10em;
+            background-color: rgba(9, 13, 56, 0.596);
+            color: white;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            background-image: url(../asset/image/arrow.svg);
+            background-repeat: no-repeat;
+            background-position: right 24px center;
+            margin-top: 2rem;
+
+        }
+
+        button:hover {
+            background-color: rgba(9, 13, 56, 0.89);
+        }
+
+        footer>div {
+            background-color: rgba(9, 13, 56, 0.596);
+        }
+
+        .foot {
+            text-align: center;
+            padding: 3.2rem 0rem;
+            color: white;
+            font-size: large;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h2>Daily <span>UI</span> </h2>
+
+            <ul class="navbar-nav">
+                <li class="nav-item">Longin</li>
+                <li class="nav-item">Sign Up</li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <form>
+            <div class="mail">
+                <img src="../asset/image/envelope.svg" alt="mail">
+                <input type="text" name="mail" id="mail">
+            </div>
+            <div class="password">
+                <img src="../asset/image/lock.svg" alt="lock">
+                <input type="password" name="password" id="password">
+            </div>
+            <button type="submit">Enter</button>
+        </form>
+    </div>
+    <footer>
+        <div class="foot">
+            Made by the dudes behind Noon Pacific. <br> Inspired by paul Nechita.
+        </div>
+    </footer>
+</body>
+
+</html>

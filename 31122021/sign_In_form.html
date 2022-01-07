@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EIT Program - Sign In</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .eit-text {
+            color: white;
+            font-size: 1.5rem;
+            padding: 2rem;
+
+        }
+
+        body {
+            background-image: linear-gradient(to right, #166cb6 50%, white 50%);
+
+        }
+
+        .container {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .signin-form {
+            background-color: white;
+            filter: drop-shadow();
+            border: .5px solid #dbdbdb;
+            display: flex;
+            flex-direction: column;
+            padding: 1.2rem 3rem;
+            width: 37%;
+            border-radius: 0.31rem;
+        }
+
+        .signin-form .logo {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        .eit-form>.name,
+        .eit-form>.password {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .eit-form #name,
+        .eit-form #password {
+            height: 2.3rem;
+            width: auto;
+        }
+
+        .name {
+            margin-bottom: 2rem;
+        }
+
+        .name label,
+        .password label {
+            margin-bottom: 0.2rem;
+        }
+
+        .password {
+            margin-bottom: 2rem;
+        }
+
+        button {
+            margin: 0 auto;
+            padding: 0.5rem 4rem;
+            display: block;
+            background-color: #166cb6;
+            color: white;
+            border: none;
+            border-radius: 0.18rem;
+            transition: all .5s ease;
+            cursor: pointer;
+            font-size: 1.053rem;
+        }
+
+        button:hover {
+            background-color: #0f4a7e;
+        }
+
+        .footer {
+            border-top: 1px solid rgba(0, 0, 0, 0.089);
+            margin-top: 2rem;
+            padding-top: 1.3rem;
+            text-align: center;
+        }
+
+        .footer>p {
+            font-size: smaller;
+        }
+
+        @media(max-width: 490px) {
+
+            html,
+            body {
+                height: auto;
+            }
+        }
+
+        @media (max-width: 704px) {
+            .signin-form {
+                width: 87%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h3 class="eit-text">EIT PDP</h3>
+    <div class="container">
+        <div class="signin-form">
+            <div class="logo">
+                <img src="http://pdp.8eit.org/images/EIT_Logo_64x64_45.ico" alt="eit-logo" width="50" height="50" />
+            </div>
+            <form class="eit-form">
+                <div class="name">
+                    <label for="nmae">Name</label> <input type="text" name="name" id="name">
+
+                </div>
+                <div class="password">
+                    <label for="password">Password</label> <input type="password" name="password" id="password">
+                </div>
+                <button type="submit">Sign In</button>
+            </form>
+            <div class="footer">
+                <p>No Account? <a class="creat" href="">Creat One</a></p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
